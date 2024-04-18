@@ -8,7 +8,7 @@ if grep -q "josephus" index.html; then
     echo "Index.html already contains josephus, skipping insertion."
 else
     # 定义要插入的代码
-    code='<script type="text/javascript" src="https://raw.githubusercontent.com/chenghui-lee/dd-danmaku/master/josephus/ext.js"></script>\n<link rel="stylesheet" href="https://raw.githubusercontent.com/chenghui-lee/dd-danmaku/master/josephus/ext.css"/>\n'
+    code='<script src="https://raw.githubusercontent.com/chenghui-lee/dd-danmaku/master/ede.js" defer></script>'
 
     # 在</body>之前插入代码
     new_content=$(echo -e "${content/<\/body>/$code<\/body>}")
