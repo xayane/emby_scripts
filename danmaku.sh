@@ -4,8 +4,8 @@
 content=$(cat index.html)
 
 # 检查index.html是否包含emby-crx
-if grep -q "josephus" index.html; then
-    echo "Index.html already contains josephus, skipping insertion."
+if grep -q "chenghui-lee" index.html; then
+    echo "Index.html already contains danmuku, skipping insertion."
 else
     # 定义要插入的代码
     code='<script src="https://raw.githubusercontent.com/chenghui-lee/dd-danmaku/master/ede.js" defer></script>'
