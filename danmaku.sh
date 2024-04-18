@@ -4,8 +4,8 @@
 content=$(cat index.html)
 
 # 检查index.html是否包含emby-crx
-if grep -q "danmaku.movie.kg" index.html; then
-    echo "Index.html already contains danmaku.movie.kg, skipping insertion."
+if grep -q "josephus" index.html; then
+    echo "Index.html already contains josephus, skipping insertion."
 else
     # 定义要插入的代码
     code='<script type="text/javascript" src="https://raw.githubusercontent.com/chenghui-lee/dd-danmaku/master/josephus/ext.js"></script>\n<link rel="stylesheet" href="https://raw.githubusercontent.com/chenghui-lee/dd-danmaku/master/josephus/ext.css"/>\n'
