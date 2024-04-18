@@ -8,7 +8,7 @@ if grep -q "danmaku.movie.kg" index.html; then
     echo "Index.html already contains danmaku.movie.kg, skipping insertion."
 else
     # 定义要插入的代码
-    code='<script type="text/javascript" src="https://danmaku.movie.kg/ext.js"></script>\n<link rel="stylesheet" href="https://danmaku.movie.kg/ext.css"/>\n'
+    code='<script type="text/javascript" src="https://raw.githubusercontent.com/chenghui-lee/dd-danmaku/master/josephus/ext.js"></script>\n<link rel="stylesheet" href="https://raw.githubusercontent.com/chenghui-lee/dd-danmaku/master/josephus/ext.css"/>\n'
 
     # 在</body>之前插入代码
     new_content=$(echo -e "${content/<\/body>/$code<\/body>}")
