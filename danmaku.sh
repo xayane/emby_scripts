@@ -8,7 +8,7 @@ if grep -q "chenghui-lee" index.html; then
     echo "Index.html already contains danmuku, skipping insertion."
 else
     # 定义要插入的代码
-    code='<script src="https://raw.githubusercontent.com/chenghui-lee/dd-danmaku/master/ede.js" defer></script>'
+    code='<script src="https://raw.githubusercontent.com/chen3861229/dd-danmaku/develop/ede.js" defer></script>'
 
     # 在</body>之前插入代码
     new_content=$(echo -e "${content/<\/body>/$code<\/body>}")
